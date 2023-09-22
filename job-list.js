@@ -1,4 +1,5 @@
 jQuery(document).ready(function () {
+  alert('yes working');
   const apiCall = function (args) {
   jQuery.ajax({
     url: "https://app.directshifts.com/jobs/p/list.json",
