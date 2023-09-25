@@ -1,3 +1,3 @@
 jQuery(document).ready(function(){
-  alert("we are working in new file name job-list_check.js");
+  alert("we are working in new file name step - 2 under job-list_check.js");
 })
