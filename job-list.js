@@ -1,5 +1,5 @@
 <script>
   jQuery(document).ready(function () {
-    alert('yes working');
+    alert('File Got Included successfully');
   });
 </script>
