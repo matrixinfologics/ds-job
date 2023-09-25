@@ -1,3 +1,5 @@
-jQuery(document).ready(function () {
-  alert('yes working');
-});
+<script>
+  jQuery(document).ready(function () {
+    alert('yes working');
+  });
+</script>
