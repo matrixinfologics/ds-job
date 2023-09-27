@@ -185,3 +185,19 @@ jQuery(document).ready(function () {
             e({ state: a, city: t, occupation: s, specialty: i, category: n, practice_type: l, page: c });
         });
 });
+jQuery(document).ready(function() {
+  var datalist = $jQuery('#lists_state');
+  var options = datalist.find('label');
+  jQuery('#searchState').on('keyup', function() {
+    var searchTerm = jQuery(this).val().toLowerCase();
+    options.each(function() {
+      var label = $(this);
+      var stateName = label.find('span').text().toLowerCase();
+      if (stateName.includes(searchTerm)) {
+        label.show();
+      } else {
+        label.hide();
+      }
+    });
+  });
+});
