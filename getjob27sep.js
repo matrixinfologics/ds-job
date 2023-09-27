@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
                                 e.jobs[a].state_code
                             }</span></div></div></div><div class="apply-now-wrap"><a target="_blank" class="btn-test"href="https://app.directshifts.com/jobs/p/${
                                 e.jobs[a].slug
-                            }?utm_source=${getUtmSource}?utm_medium=${getUtmMedium}?utm_campaign=${getUtmCampaign}">Test Button</a><a target="_blank" class="btn-applynow" href="${e.jobs[a].link}">Apply Now</a></div></div>\n   <div class="jl-types"> <a target="_blank" class="data-link"href="${
+                            }?utm_source=${getUtmSource}&utm_medium=${getUtmMedium}&utm_campaign=${getUtmCampaign}">Test Button</a><a target="_blank" class="btn-applynow" href="${e.jobs[a].link}">Apply Now</a></div></div>\n   <div class="jl-types"> <a target="_blank" class="data-link"href="${
                                 e.jobs[a].link
                             }"\n   <div class="jl-sn-wrapper">\n   <h6 class="jl-sn-heading">Specialty</h6>\n   <div class="jl-sn">${i}</div>\n   </div> <div class="jl-pt-wrapper">\n   <h6 class="jl-pt-heading">Practice Type</h6>\n   <div class="jl-pt">${
                                 "string" == typeof e.jobs[a].practice_type ? `<span class="jl-pt-inr-items">${e.jobs[a].practice_type}</span>` : l
