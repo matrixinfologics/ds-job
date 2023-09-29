@@ -31,17 +31,24 @@ jQuery(document).ready(function () {
                             var regex = /[?&](utm_medium|utm_source|utm_campaign)=/;
                             return regex.test(url);
                           }
-                          (t += `<tr class="my-code">\n   <td> <div class="jl-title-wrap">\n   <div class="jl-title"><a target="_blank" class="data-link" href="${e.jobs[a].link}">${
-                              e.jobs[a].title
-                          }</a><div class="jl-main-head"><div class="jl-location"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/63c1428ec77fbc6cb91ce1c7_location-icon.png"/><span>${e.jobs[a].city},</span> <span>${
-                              e.jobs[a].state_code
-                          }</span></div></div></div><div class="apply-now-wrap">`if (checkUTMParameters(currentURL)) {`<a target="_blank" class="btn-test"href="https://app.directshifts.com/jobs/p/${
-                              e.jobs[a].slug
-                          }?utm_source=${getUtmSource}&utm_medium=${getUtmMedium}&utm_campaign=${getUtmCampaign}">Test Button</a>`} else{`<a target="_blank" class="btn-test"${e.jobs[a].link}">Test Button</a>`}`<a target="_blank" class="btn-applynow" href="${e.jobs[a].link}">Apply Now</a></div></div>\n   <div class="jl-types"> <a target="_blank" class="data-link"href="${
-                              e.jobs[a].link
-                          }"\n   <div class="jl-sn-wrapper">\n   <h6 class="jl-sn-heading">Specialty</h6>\n   <div class="jl-sn">${i}</div>\n   </div> <div class="jl-pt-wrapper">\n   <h6 class="jl-pt-heading">Practice Type</h6>\n   <div class="jl-pt">${
-                              "string" == typeof e.jobs[a].practice_type ? `<span class="jl-pt-inr-items">${e.jobs[a].practice_type}</span>` : l
-                          }</div>\n   </div></a></div></td></tr>`),
+                         (t += `<tr class="my-code">\n   <td> <div class="jl-title-wrap">\n   <div class="jl-title"><a target="_blank" class="data-link" href="${e.jobs[a].link}">${
+                            e.jobs[a].title
+                        }</a><div class="jl-main-head"><div class="jl-location"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/63c1428ec77fbc6cb91ce1c7_location-icon.png"/><span>${e.jobs[a].city},</span> <span>${
+                            e.jobs[a].state_code
+                        }</span></div></div></div><div class="apply-now-wrap">`;
+                        if (checkUTMParameters(currentURL)) {
+                            t += `<a target="_blank" class="btn-test" href="https://app.directshifts.com/jobs/p/${
+                                e.jobs[a].slug
+                            }?utm_source=${getUtmSource}&utm_medium=${getUtmMedium}&utm_campaign=${getUtmCampaign}">Test Button</a>`;
+                        } else {
+                            t += `<a target="_blank" class="btn-test" href="${e.jobs[a].link}">Test Button</a>`;
+                        }
+                        
+                        t += `<a target="_blank" class="btn-applynow" href="${e.jobs[a].link}">Apply Now</a></div></div>\n   <div class="jl-types"> <a target="_blank" class="data-link" href="${
+                            e.jobs[a].link
+                        }">\n   <div class="jl-sn-wrapper">\n   <h6 class="jl-sn-heading">Specialty</h6>\n   <div class="jl-sn">${i}</div>\n   </div> <div class="jl-pt-wrapper">\n   <h6 class="jl-pt-heading">Practice Type</h6>\n   <div class="jl-pt">${
+                            "string" == typeof e.jobs[a].practice_type ? `<span class="jl-pt-inr-items">${e.jobs[a].practice_type}</span>` : l
+                        }</div>\n   </div></a></div></td></tr>`),
                               4 === a &&
                                   (t +=
                                       '<tr class="desktopSign cstom1 mobile-apps-1"><td colspan="2"><div class="main-content-b"><div class="image-block"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6514047d22c7101f4b2f9ee3_sign-up-banner---Illustration.jpg"alt="image"></div><div class="right-content"><div class="directshift_regstring"><h4>Make the most of Directshifts by registering for free</h4><div class="dirctneq"><ul><li>Personalised recommendations</li><li>Get support at every step</li><li>Real-time updates</li><li>Boost visibility with employers</li></ul></div><div class="dirctregstrbtn"><a href="/sign-up">Register Now</a></div></div></div></div></td></tr>'),
