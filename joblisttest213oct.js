@@ -45,32 +45,10 @@ jQuery(document).ready(function () {
                           }</div>\n   </div></a></div></td></tr>`),
                               4 === a &&
                                   (t +=
-                                      '<tr class="desktopSign cstom1 mobile-apps-1">
-   <td colspan="2">
-      <div class="main-content-b">
-         <div class="image-block">
-            <img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f538c315ff9443fa72_Sign%20Up%20Banner%20(1).svg" alt="image">
-         </div>
-         <div class="right-content">
-            <div class="directshift_regstring">
-               <h4>Make the most of DirectShifts by registering for free!</h4>
-               <div class="dirctneq">
-                  <ul>
-                     <li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f1b3935fbb351447b5_Personalised%20recommendations.svg"><span>Personalised recommendations</span></li>
-                     <li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f18c8705e97403803c_Get%20support%20at%20every%20step.svg"><span>Get support at every step</span></li>
-                     <li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f1e4171f39a0ede315_Boost%20visibility%20with%20employers%20.svg"><span>Real-time updates</span></li>
-                     <li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f27031cb2307405bbf_Real-time%20updates.svg"><span>Boost visibility with employers</span></li>
-                  </ul>
-               </div>
-               <div class="dirctregstrbtn"><a href="/sign-up">Register for free</a></div>
-            </div>
-         </div>
-      </div>
-   </td>
-</tr>'),
+                                      '<tr class="desktopSign cstom1 mobile-apps-1"><td colspan="2"><div class="main-content-b"><div class="image-block"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f538c315ff9443fa72_Sign%20Up%20Banner%20(1).svg" alt="image"></div><div class="right-content"><div class="directshift_regstring"><h4>Make the most of DirectShifts by registering for free!</h4><div class="dirctneq"><ul><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f1b3935fbb351447b5_Personalised%20recommendations.svg"><span>Personalised recommendations</span></li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f18c8705e97403803c_Get%20support%20at%20every%20step.svg"><span>Get support at every step</span></li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f1e4171f39a0ede315_Boost%20visibility%20with%20employers%20.svg"><span>Real-time updates</span></li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/6528d4f27031cb2307405bbf_Real-time%20updates.svg"><span>Boost visibility with employers</span></li></ul></div><div class="dirctregstrbtn"><a href="/sign-up">Register for free</a></div></div></div></div></td></tr>'),
                               10 === a &&
                                   (t +=
-                                      '<tr class="desktopSign cstom2 mobile-apps download-app"><td colspan="2"><div class="main-content-b"><div class="image-block"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/65157ca9aae8c81512995010_mobile-banner-2.png" alt="image"></div><div class="right-content"><div class="directshift_regstring"><h4>Find your perfect helthcare job on the go with the DirectShifts App!</h4><div class="dirctneq"><ul class="app-list"><li>Application Tracking</li><li>Application Tracking</li><li>Application Tracking</li><li>Application Tracking</li></ul></div><div class="dirctregstrbtn download"><a href="https://play.google.com/store/apps/details?id=com.directshifts&amp;hl=en_US&amp;gl=US">Download Now</a></div></div></div></div></td></tr>');
+                                      '<tr class="desktopSign cstom2 mobile-apps download-app"><td colspan="2"><div class="main-content-b"><div class="image-block"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/65157ca9aae8c81512995010_mobile-banner-2.png" alt="image"></div><div class="right-content"><div class="directshift_regstring"><h4>Find your perfect healthcare job on the go with the DirectShifts App!</h4><div class="dirctneq"><ul class="app-list"><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/652d22b487d36e6c66417710_document%20(1).png">Application Tracking</li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/652d22b487d36e6c66417710_document%20(1).png">Document Management</li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/652d22b487d36e6c66417710_document%20(1).png">Seamless Timesheets</li><li><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/652d22b487d36e6c66417710_document%20(1).png">Paycheck Tracking</li></ul></div><div class="dirctregstrbtn download"><a href="https://play.google.com/store/apps/details?id=com.directshifts&amp;hl=en_US&amp;gl=US">Download Now</a></div></div></div></div></td></tr>');
                       }
                       let a = "";
                       e.total_pages > 1 &&
@@ -91,7 +69,7 @@ jQuery(document).ready(function () {
                           jQuery(".api-pagination").html(a);
                   } else
                       (t =
-                          '<div class="nrfound"><h2>Message for when we don’t have a job</h2><p>We may have job openings for you, even if it\'s not yet listed!\nOur job listings are constantly evolving. Connect with us to uncover potential job openings tailored to your needs. We\'re here to help you find the right job for you. </p><a href="https://www.directshifts.com/clinician-perks-benefits">Contact a recruiter</a></div>'),
+                          '<div class="nrfound"><h2>We may have job openings for you, even if it\'s not yet listed!</h2><p>Our job listings are constantly evolving. Connect with us to uncover potential job openings tailored to your needs. We\'re here to help you find the right job for you. </p><a href="https://www.directshifts.com/clinician-perks-benefits">CTA - Connect with a clinician partner</a></div>'),
                           jQuery(".api-pagination").html("");
                   if (((a.innerHTML = t), !document.getElementById("lists_state"))) {
                       let a = "";
