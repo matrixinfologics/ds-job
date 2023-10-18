@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
             
           html += `<tr>
             <td>
-                <div id="hotJob">${hotJobElement}</div>
+                <div id="hotJob"><img src="https://uploads-ssl.webflow.com/5abebcf1b3e0cb4bb9718bba/652d3b92927905d052de6d4e_Hot%20job.svg"><span>${hotJobElement}</span></div>
                 <div class="jl-title-wrap">
                 <div class="jl-title">
                 <a target="_blank" class="data-link" href="${result.jobs[i].link}">${result.jobs[i].title}</a>
