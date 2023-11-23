@@ -3,7 +3,7 @@ jQuery(document).ready(function () {
     jQuery.ajax({
       url: "https://app.directshifts.com/jobs/p/list.json",
       async: true,
-      data: args,
+      data: args, 
       crossDomain: true,
       success: function (result) {
         let root = document.getElementById("root");
