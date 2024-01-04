@@ -356,7 +356,7 @@ jQuery(document).ready(function () {
         jQuery("#checked-count").text("Applied (" + totalCount + ")");
         if(jQuery(this).hasClass('api-occupation')){
             let i = getSelectedValues(".api-occupation:checked");
-            r = new URL("https://www.directshifts.com/open-jobs");
+            r = new URL("https://www.directshifts.com/open-jobs-copy-jan-4-2024");
             if (i.length) r.searchParams.set("occupation[]", i.join("&"));
             window.history.pushState(null, "", r.toString());
             $( "ul.search_fields li:nth-child(2)").find("div.card-header").trigger("click");
@@ -369,7 +369,7 @@ jQuery(document).ready(function () {
             l = getSelectedValues(".api-category:checked"),
             c = getSelectedValues(".api-practice-type:checked");
 
-            r = new URL("https://www.directshifts.com/open-jobs");
+            r = new URL("https://www.directshifts.com/open-jobs-copy-jan-4-2024");
             if (t.length) r.searchParams.set("state[]", t.join(","));
             if (s.length) r.searchParams.set("city[]", s.join(","));
             if (i.length) r.searchParams.set("occupation[]", i.join(","));
@@ -388,7 +388,7 @@ jQuery(document).ready(function () {
     }
     jQuery("#clear-all-button").on("click", function () {
         jQuery('input[type="checkbox"]').prop("checked", !1);
-        let a = new URL("https://www.directshifts.com/open-jobs");
+        let a = new URL("https://www.directshifts.com/open-jobs-copy-jan-4-2024");
         a.searchParams.delete("state"),
             a.searchParams.delete("city"),
             a.searchParams.delete("occupation"),
